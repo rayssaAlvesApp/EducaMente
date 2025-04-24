@@ -1,0 +1,217 @@
+:root {
+    --branco: #ffff;
+    --gelo: #f1f1f1;
+    --verde: #19c463;
+    --preto: #2a2a2a;
+    --cinzaLupa: #b3afaf;
+
+
+
+    --cinza: #f4efe9;
+    --cinza2: #f7f9fc;
+    --azul: #bae1f7;
+    --azul2: #b3d6f3;
+    --azul3: #6db3e8;
+    --amarelo: #f3bf14;
+
+
+    --amarelo2: #f3bf14;
+    --verdeClaro: #a9e7d0;
+    --rosa: #fecfc8;
+    --rosa2: #fef7e9;
+
+}
+
+
+.container-configuracao {
+    background: #d5f6f5;
+    border-radius: 20px;
+    padding: 20px;
+   
+    margin: auto;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.titulo-config {
+    text-align: center;
+    background-color: #825dd2;
+    color: white;
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 24px;
+    margin-top: -50px;
+
+}
+
+label {
+   
+    margin-top: 14px;
+    font-weight: bold;
+    color: var(--preto);
+}
+
+.dadoConfig {
+    display: flex !important; ;
+    height: 40px !important;
+    border-radius: 8px !important;
+    background-color: var(--branco) !important;
+    
+    
+
+}
+
+
+input,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: var(--branco);
+    
+}
+
+input:focus,
+select:focus {
+    border-color: var(--azul3);
+    box-shadow: 0 0 5px var(--azul3);
+    outline: none;
+    background-color: var(--rosa2)!important; /* cor de fundo diferente ao focar */
+}
+
+.sex-select {
+    display: flex;
+    
+    justify-content: space-around;
+    margin-top: 10px;
+
+}
+
+.sex-select img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    cursor: pointer;
+
+}
+
+.selected {
+    border-color: #f39c12;
+
+}
+
+.button-config {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+
+/* Estilo para as opções de sexo */
+.sex-select {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.sex-option {
+    width: 80px;
+    height: 80px;
+    margin: 0 10px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.sex-option.selected {
+    border-color: #2196f3;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(33, 150, 243, 0.5);
+}
+
+/* Estilo para os inputs */
+.dadoConfig, select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+
+.button-config {
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+    transition: opacity 0.3s;
+}
+
+.button-config:active {
+    opacity: 0.8;
+}
+
+
+@media (max-width: 667px) {
+
+    .container-configuracao {
+    
+        max-width: 400px;
+    }
+    
+}
+
+@media (max-width: 896px) {
+
+    .container-configuracao {
+    
+        max-width: 600px;
+    }
+    
+}
+
+
+@media (max-width: 1200px) {
+
+    .container-configuracao {
+    
+        max-width: 500px;
+    }
+    
+}
+
+
+@media (max-width: 1400px) {
+
+    .container-configuracao {
+    
+        max-width: 800px;
+    }
+    
+}
+
+@media (max-width: 2000px) {
+
+    .container-configuracao {
+    
+        max-width: 1000px;
+    }
+    
+}
